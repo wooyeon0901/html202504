@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title> 도전!!!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Single+Day&display=swap');
+
+        body { margin:0px; 
+            background-image: url("lucy2.jpg");
+            background-size: cover;
+        }
+        div {
+            font-family: "Noto Serif KR", Helvetica, sans-serif;
+            text-align:center;
+            font-weight:700;
+            font-size:10pt;
+            line-height:40px;
+        }
+        .menubox {
+            display:flex;
+            justify-content: space-evenly;
+        }
+        .topmenu {
+            flex-basis: 20%;
+            transition:1s;
+            background-color: rgba(127, 185, 247, 0);
+        }
+        .topmenu:hover {
+            background-color: rgba(0,0,0,0.3);
+        }
+        .submenu {
+            transition:0.5s;
+            background-color: rgba(255,255,0,0);
+        }
+        .submenu:hover {
+            background-color: rgba(71, 145, 255, 0.442);
+        }
+        .menusub {
+            display:none;
+        }
+    </style>
+  </head>
+  <body>
+    <script>
+        function showbox(dpname) {
+            let box = document.getElementById(dpname);
+            box.style.display = "block";
+        }
+    </script>
+<div class="menubox">
+    <div class="topmenu"onClick="showbox('submenu1')">DEAR
+        <div class="menusub" id="submenu1">
+            <div class="submenu">INTRO</div>
+            <div class="submenu">개화</div>
+        </div>
+    </div>
+    <div class="topmenu" onClick="showbox('submenu2')">PANORAMA
+        <div class="menusub" id="submenu2">
+            <div class="submenu">조깅</div>
+            <div class="submenu">수박깨러가</div>
+            <div class="submenu">Straight Line</div>
+            <div class="submenu">MIssing Call</div>
+            <div class="submenu">충분히</div>
+            <div class="submenu">Flare</div>
+        </div>
+        </div>
+    <div class="topmenu" onClick="showbox('submenu3')">선잠
+        <div class="menusub" id="submenu3">
+            <div class="submenu">선잠</div>
+            <div class="submenu">Farther and Farther</div>
+        </div>
+    </div>
+    <div class="topmenu"onClick="showbox('submenu4')">INSIDE
+    <div class="menusub" id="submenu4">
+        <div class="submenu">히어로</div>
+        <div class="submenu">난로</div>
+        <div class="submenu">OUTRO</div>
+    </div>
+</div>
+    </body>
+</html>
